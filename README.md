@@ -1,7 +1,7 @@
 # Pride In London - React Native App
 
 ## Environment Setup
-Please follow the instructions to setup the environment here (https://reactnative.dev/docs/environment-setup)[https://reactnative.dev/docs/environment-setup]. 
+Please follow the instructions to setup the environment [here](https://reactnative.dev/docs/environment-setup).
 
 *NOTE:* Please ensure you select the **React Native CLI Quickstart** instructions, **NOT** the Expo CLI Quickstart.
 
