@@ -17,7 +17,6 @@ module.exports = {
     'import/no-duplicates': 'error',
     'import/no-extraneous-dependencies': 'off',
     'import/no-named-as-default': 'off',
-    'import/no-unresolved': 'error',
     'import/order': 'error',
     'import/prefer-default-export': 'off',
     semi: 'off', /** handled by prettier */
