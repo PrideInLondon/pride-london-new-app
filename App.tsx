@@ -26,9 +26,9 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
 
-declare const global: {HermesInternal: null | {}}
+declare const global: { HermesInternal: null | {} }
 
-const App = () => {
+export const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -42,7 +42,7 @@ const App = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
-          <View style={styles.body}>
+          <View style={styles.body} testID="app-body">
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
@@ -114,5 +114,3 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 })
-
-export default App
