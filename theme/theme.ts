@@ -1,7 +1,11 @@
-// Theme and Styled System to be setup as separate ticket
-// implemented here as a temporary measure to setup the custom test renderer with themeprovider.
+import { colors } from './colors'
+import { fontSizes } from './fontSizes'
+import { lineHeights } from './lineHeights'
+import { space } from './space'
+
 export const theme = {
-  colors: {
-    indigo: '#2D2F7F',
-  },
+  colors,
+  fontSizes,
+  lineHeights,
+  space,
 }
