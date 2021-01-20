@@ -1,0 +1,24 @@
+diff --git a/node_modules/@types/styled-system/index.d.ts b/node_modules/@types/styled-system/index.d.ts
+index fcbd907..e0ac8a8 100644
+--- a/node_modules/@types/styled-system/index.d.ts
++++ b/node_modules/@types/styled-system/index.d.ts
+@@ -67,7 +67,7 @@ export type ThemeValue<K extends keyof ThemeType, ThemeType, TVal = any> =
+     ThemeType[K] extends Record<infer E, TVal> ? E :
+     ThemeType[K] extends ObjectOrArray<infer F> ? F : never;
+ 
+-export interface SpaceProps<ThemeType extends Theme = RequiredTheme, TVal = ThemeValue<'space', ThemeType>> {
++export interface SpaceProps<ThemeType extends Theme = RequiredTheme, TVal = ThemeValue<'space', ThemeType> | number> {
+     /** Margin on top, left, bottom and right */
+     m?: ResponsiveValue<TVal, ThemeType>;
+     /** Margin on top, left, bottom and right */
+@@ -353,8 +353,8 @@ export interface FontSizeProps<ThemeType extends Theme = RequiredTheme, TVal = T
+ 
+ export const fontSize: styleFn;
+ 
+-export interface FontFamilyProps<ThemeType extends Theme = RequiredTheme> {
+-    fontFamily?: ResponsiveValue<CSS.Property.FontFamily, ThemeType>;
++export interface FontFamilyProps<ThemeType extends Theme = RequiredTheme, TVal = ThemeValue<'fonts', ThemeType>> {
++    fontFamily?: ResponsiveValue<TVal, ThemeType>;
+ }
+ 
+ export const fontFamily: styleFn;
