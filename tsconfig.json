@@ -59,10 +59,11 @@
     "skipLibCheck": true
   },
   "exclude": [
-    "node_modules",
     "babel.config.js",
-    "metro.config.js",
+    "graphql.tsx",
     "jest.config.js",
-    "jest.setup.ts"
+    "jest.setup.ts",
+    "metro.config.js",
+    "node_modules"
   ]
 }
