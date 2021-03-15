@@ -8,7 +8,7 @@ import {
 } from '@storybook/react-native'
 import { withKnobs } from '@storybook/addon-knobs'
 import styled, { ThemeProvider } from 'styled-components/native'
-import { theme } from '../theme/theme'
+import { theme } from '../src/theme/theme'
 import { loadStories } from './storyLoader'
 import './rn-addons'
 

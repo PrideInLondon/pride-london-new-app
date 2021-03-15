@@ -26,11 +26,13 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
 
+import { Providers } from './src/components/Providers/Providers'
+
 declare const global: { HermesInternal: null | {} }
 
 export const App = () => {
   return (
-    <>
+    <Providers>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -72,7 +74,7 @@ export const App = () => {
           </View>
         </ScrollView>
       </SafeAreaView>
-    </>
+    </Providers>
   )
 }
 

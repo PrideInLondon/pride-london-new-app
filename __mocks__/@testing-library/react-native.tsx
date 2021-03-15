@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import { RenderOptions } from '@testing-library/react-native'
 import { ThemeProvider } from 'styled-components/native'
-import { theme } from '../../theme/theme'
+import { theme } from '../../src/theme/theme'
 
 const lib = jest.requireActual('@testing-library/react-native')
 

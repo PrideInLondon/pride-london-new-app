@@ -12,8 +12,8 @@ import {
   P,
   Em,
   Strong,
-} from '../../../components/Typography/Typography'
-import { Wrapper } from '../../../components/Wrapper/Wrapper'
+} from '../../../src/components/Typography/Typography'
+import { Wrapper } from '../../../src/components/Wrapper/Wrapper'
 const bodyVariants = {
   default: 'default',
   sm: 'sm',
